@@ -1,0 +1,89 @@
+@{
+    ViewData["Title"] = "Home - Online Food Ordering System";
+}
+
+<div class="jumbotron bg-light p-5 rounded-lg mb-4">
+    <h1 class="display-4"><i class="fas fa-utensils"></i> Welcome to Online Food Ordering</h1>
+    <p class="lead">Order delicious food from the comfort of your home. Fast, easy, and reliable delivery.</p>
+    <hr class="my-4">
+    <p>Browse our menu, select your favorite items, and place your order today!</p>
+</div>
+
+<div class="row mb-4">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-hamburger"></i> Browse Menu</h5>
+                <p class="card-text">Check out our delicious food items and categories</p>
+                <a href="/Food/Index" class="btn btn-primary">View Menu</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-shopping-cart"></i> Place Order</h5>
+                <p class="card-text">Create a new order and get your food delivered</p>
+                <a href="/Order/Create" class="btn btn-primary">Create Order</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-user-plus"></i> Register Customer</h5>
+                <p class="card-text">Register as a new customer to enjoy our services</p>
+                <a href="/Customer/Create" class="btn btn-primary">Register Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="mb-5">
+    <h2 class="mb-3">Our Services</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-clock"></i> Fast Delivery</h5>
+                    <p class="card-text">Get your food delivered within 30-45 minutes of placing your order.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-star"></i> Quality Food</h5>
+                    <p class="card-text">All our food items are prepared fresh and delivered with care.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-lock"></i> Secure Ordering</h5>
+                    <p class="card-text">Your personal information is safe and secure with us.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-headset"></i> 24/7 Support</h5>
+                    <p class="card-text">Our customer support team is always ready to help you.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light p-4 rounded">
+    <h2 class="mb-3">Quick Links</h2>
+    <ul class="list-unstyled">
+        <li><a href="/Food/Index" class="btn btn-outline-primary btn-sm me-2 mb-2"><i class="fas fa-list"></i> View All Food Items</a></li>
+        <li><a href="/Customer/Index" class="btn btn-outline-info btn-sm me-2 mb-2"><i class="fas fa-users"></i> Manage Customers</a></li>
+        <li><a href="/Order/Index" class="btn btn-outline-success btn-sm me-2 mb-2"><i class="fas fa-receipt"></i> Manage Orders</a></li>
+        <li><a href="/Home/About" class="btn btn-outline-secondary btn-sm me-2 mb-2"><i class="fas fa-info-circle"></i> About Us</a></li>
+        <li><a href="/Home/Contact" class="btn btn-outline-secondary btn-sm mb-2"><i class="fas fa-envelope"></i> Contact Us</a></li>
+    </ul>
+</section>
