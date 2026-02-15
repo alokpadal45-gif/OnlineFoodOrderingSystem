@@ -48,7 +48,7 @@ namespace OnlineFoodOrderingSystem.Controllers
 		// POST: /Food/Create
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public async Task<IActionResult> Create([Bind("FoodId,FoodName,Description,Price,Category,IsAvailable")] Food food)
+		public async Task<IActionResult> Create([Bind("FoodId,Name,Description,Price,Category,IsAvailable")] Food food)
 		{
 			if (ModelState.IsValid)
 			{
@@ -79,7 +79,7 @@ namespace OnlineFoodOrderingSystem.Controllers
 		// POST: /Food/Edit/5
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public async Task<IActionResult> Edit(int id, [Bind("FoodId,FoodName,Description,Price,Category,IsAvailable")] Food food)
+		public async Task<IActionResult> Edit(int id, [Bind("FoodId,Name,Description,Price,Category,IsAvailable")] Food food)
 		{
 			if (id != food.FoodId)
 			{
