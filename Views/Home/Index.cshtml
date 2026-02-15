@@ -2,12 +2,25 @@
     ViewData["Title"] = "Home - Online Food Ordering System";
 }
 
-<div class="jumbotron bg-light p-5 rounded-lg mb-4">
-    <h1 class="display-4"><i class="fas fa-utensils"></i> Welcome to Online Food Ordering</h1>
-    <p class="lead">Order delicious food from the comfort of your home. Fast, easy, and reliable delivery.</p>
-    <hr class="my-4">
-    <p>Browse our menu, select your favorite items, and place your order today!</p>
-</div>
+<section class="hero">
+    <div class="hero-content">
+        <h1 class="mb-2"><i class="fas fa-utensils"></i> Delicious food, delivered fast</h1>
+        <p class="lead text-muted">Order from your favorite restaurants and get it delivered hot and fresh. Seamless experience from browsing to checkout.</p>
+        <div class="hero-cta mt-3">
+            <a href="/Food/Index" class="btn btn-lg btn-primary me-2"><i class="fas fa-list"></i> Browse Menu</a>
+            <a href="/Order/Create" class="btn btn-outline-primary btn-lg"><i class="fas fa-shopping-cart"></i> Create Order</a>
+        </div>
+    </div>
+    <div class="d-none d-md-block" style="min-width:320px;max-width:420px;">
+        <div class="card p-3" style="background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.75));">
+            <img src="/lib/bootstrap/logo.svg" alt="hero" class="img-fluid rounded" style="object-fit:cover; height:200px; width:100%;">
+            <div class="card-body">
+                <h5 class="card-title">Special Offer</h5>
+                <p class="card-text text-muted">Get 15% off on your first order. Use code <strong>WELCOME15</strong>.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 <div class="row mb-4">
     <div class="col-md-4">

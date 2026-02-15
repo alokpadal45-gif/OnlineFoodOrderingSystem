@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\98411\\OneDrive\\Documents\\KingsCollege\\OnlineFoodOrderingSystem\\OnlineFoodOrderingSystem\\OnlineFoodOrderingSystem.csproj": {}
+    "/home/krish-naharki/Documents/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\98411\\OneDrive\\Documents\\KingsCollege\\OnlineFoodOrderingSystem\\OnlineFoodOrderingSystem\\OnlineFoodOrderingSystem.csproj": {
+    "/home/krish-naharki/Documents/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\98411\\OneDrive\\Documents\\KingsCollege\\OnlineFoodOrderingSystem\\OnlineFoodOrderingSystem\\OnlineFoodOrderingSystem.csproj",
+        "projectUniqueName": "/home/krish-naharki/Documents/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem.csproj",
         "projectName": "OnlineFoodOrderingSystem",
-        "projectPath": "C:\\Users\\98411\\OneDrive\\Documents\\KingsCollege\\OnlineFoodOrderingSystem\\OnlineFoodOrderingSystem\\OnlineFoodOrderingSystem.csproj",
-        "packagesPath": "C:\\Users\\98411\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\98411\\OneDrive\\Documents\\KingsCollege\\OnlineFoodOrderingSystem\\OnlineFoodOrderingSystem\\obj\\",
+        "projectPath": "/home/krish-naharki/Documents/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem.csproj",
+        "packagesPath": "/home/krish-naharki/.nuget/packages/",
+        "outputPath": "/home/krish-naharki/Documents/OnlineFoodOrderingSystem/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\98411\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/krish-naharki/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,13 +32,7 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "10.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -80,24 +74,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[8.0.22, 8.0.22]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -106,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.123/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -18,6 +18,11 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
@@ -28,7 +33,7 @@
             <div class="container">
                 <!-- Brand Logo -->
                 <a class="navbar-brand" asp-controller="Home" asp-action="Index">
-                    <i class="fas fa-utensils"></i> Food Ordering System
+                    <i class="fas fa-utensils"></i> <span class="text-gradient">Food Ordering</span> System
                 </a>
 
                 <!-- Mobile Toggle Button -->
@@ -166,8 +171,8 @@
     </div>
 
     <!-- Footer -->
-    <footer class="border-top footer text-muted bg-dark text-white mt-5">
-        <div class="container py-3">
+    <footer class="border-top footer text-muted mt-5">
+        <div class="container py-4">
             <div class="row">
                 <div class="col-md-6">
                     &copy; 2026 - Online Food Ordering System

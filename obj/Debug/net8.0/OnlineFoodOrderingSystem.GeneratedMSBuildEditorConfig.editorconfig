@@ -1,7 +1,5 @@
 is_global = true
 build_property.TargetFramework = net8.0
-build_property.TargetFrameworkIdentifier = .NETCoreApp
-build_property.TargetFrameworkVersion = v8.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
@@ -11,161 +9,159 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = OnlineFoodOrderingSystem
 build_property.RootNamespace = OnlineFoodOrderingSystem
-build_property.ProjectDir = C:\Users\98411\OneDrive\Documents\KingsCollege\OnlineFoodOrderingSystem\OnlineFoodOrderingSystem\
+build_property.ProjectDir = /home/krish-naharki/Documents/OnlineFoodOrderingSystem/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\98411\OneDrive\Documents\KingsCollege\OnlineFoodOrderingSystem\OnlineFoodOrderingSystem
+build_property.MSBuildProjectDirectory = /home/krish-naharki/Documents/OnlineFoodOrderingSystem
 build_property._RazorSourceGeneratorDebug = 
-build_property.EffectiveAnalysisLevelStyle = 8.0
-build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Account/AccessDenied.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9BY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Account/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Account/Register.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Customer/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3JlYXRlLmNzaHRtbA==
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Customer/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Customer/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRGVsZXRlLmNzaHRtbA==
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Customer/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Customer/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRGV0YWlscy5jc2h0bWw=
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Customer/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Customer/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRWRpdC5jc2h0bWw=
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Customer/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Customer/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcSW5kZXguY3NodG1s
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Customer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Dashboard/AdminDashboard.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEFkbWluRGFzaGJvYXJkLmNzaHRtbA==
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Dashboard/AdminDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFzaGJvYXJkL0FkbWluRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Dashboard/CustomerDashboard.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEN1c3RvbWVyRGFzaGJvYXJkLmNzaHRtbA==
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Dashboard/CustomerDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFzaGJvYXJkL0N1c3RvbWVyRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Dashboard/ManagerDashboard.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXE1hbmFnZXJEYXNoYm9hcmQuY3NodG1s
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Dashboard/ManagerDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFzaGJvYXJkL01hbmFnZXJEYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Dashboard/StaffDashboard.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXFN0YWZmRGFzaGJvYXJkLmNzaHRtbA==
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Dashboard/StaffDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFzaGJvYXJkL1N0YWZmRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Food/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZFxDcmVhdGUuY3NodG1s
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Food/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9vZC9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Food/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZFxEZWxldGUuY3NodG1s
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Food/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9vZC9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Food/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZFxEZXRhaWxzLmNzaHRtbA==
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Food/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9vZC9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Food/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZFxFZGl0LmNzaHRtbA==
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Food/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9vZC9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Food/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZFxJbmRleC5jc2h0bWw=
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Food/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9vZC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Home/About.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Home/Contact.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Db250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Home/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvci5jc2h0bWw=
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Home/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9FcnJvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/OrderDetails/AddItem.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXEFkZEl0ZW0uY3NodG1s
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Order/AddItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvQWRkSXRlbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/OrderDetails/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXENyZWF0ZS5jc2h0bWw=
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Order/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/OrderDetails/RemoveItem.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXFJlbW92ZUl0ZW0uY3NodG1s
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Order/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Order/AddItem.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQWRkSXRlbS5jc2h0bWw=
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Order/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Order/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ3JlYXRlLmNzaHRtbA==
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Order/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Order/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRGVsZXRlLmNzaHRtbA==
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Order/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRGV0YWlscy5jc2h0bWw=
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Order/RemoveItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvUmVtb3ZlSXRlbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Order/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRWRpdC5jc2h0bWw=
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Order/UpdateStatus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvVXBkYXRlU3RhdHVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Order/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/OrderDetails/AddItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXJEZXRhaWxzL0FkZEl0ZW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Order/RemoveItem.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcUmVtb3ZlSXRlbS5jc2h0bWw=
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/OrderDetails/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXJEZXRhaWxzL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Order/UpdateStatus.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcVXBkYXRlU3RhdHVzLmNzaHRtbA==
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/OrderDetails/RemoveItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXJEZXRhaWxzL1JlbW92ZUl0ZW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/98411/OneDrive/Documents/KingsCollege/OnlineFoodOrderingSystem/OnlineFoodOrderingSystem/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/home/krish-naharki/Documents/OnlineFoodOrderingSystem/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

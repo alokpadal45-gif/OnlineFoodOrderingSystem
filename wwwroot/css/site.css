@@ -21,6 +21,82 @@ body {
   margin-bottom: 60px;
 }
 
+:root{
+  --font-sans: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  --primary: #ff6b37; /* warm */
+  --primary-2: #ff8a4a;
+  --accent: #2563eb; /* blue */
+  --muted: #6c757d;
+  --card-bg: #ffffff;
+}
+
+body{
+  font-family: var(--font-sans);
+  background: linear-gradient(180deg, #fbfbfd 0%, #f6f9ff 100%);
+  color: #212529;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  background: linear-gradient(90deg, var(--primary), var(--primary-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero {
+  padding: 4.5rem 1.5rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, rgba(255,107,55,0.12), rgba(37,99,235,0.06));
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.hero .hero-content h1{
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: .5rem;
+}
+
+.hero .hero-cta .btn-primary {
+  background: linear-gradient(90deg, var(--primary), var(--primary-2));
+  border: none;
+  box-shadow: 0 6px 18px rgba(255,107,55,0.18);
+}
+
+.card {
+  border: none;
+  border-radius: .8rem;
+  background: var(--card-bg);
+  box-shadow: 0 6px 18px rgba(18, 38, 63, 0.06);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.card:hover{ transform: translateY(-6px); box-shadow: 0 14px 30px rgba(18,38,63,0.08); }
+
+.btn-outline-primary {
+  border-radius: 40px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.footer {
+  background: linear-gradient(180deg,#0f1724 0%, #111827 100%);
+  color: rgba(255,255,255,0.9);
+}
+
+.footer a { color: rgba(255,255,255,0.85); text-decoration: none; }
+
+/* Small utilities */
+.text-gradient { background: linear-gradient(90deg, var(--primary), var(--accent)); -webkit-background-clip: text; color: transparent; }
+
+/* Make form controls a bit softer */
+.form-control { border-radius: .6rem; }
+
+
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
   color: var(--bs-secondary-color);
   text-align: end;
