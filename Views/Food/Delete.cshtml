@@ -1,0 +1,45 @@
+@model OnlineFoodOrderingSystem.Models.Food
+
+@{
+    ViewData["Title"] = "Delete Food Item";
+}
+
+<h2 class="text-danger">Delete Food Item</h2>
+<h3>Are you sure you want to delete this food item?</h3>
+<hr />
+
+<dl class="row">
+    <dt class="col-sm-3">Food ID:</dt>
+    <dd class="col-sm-9">@Model.FoodId</dd>
+
+    <dt class="col-sm-3">Name:</dt>
+    <dd class="col-sm-9">@Model.FoodName</dd>
+
+    <dt class="col-sm-3">Description:</dt>
+    <dd class="col-sm-9">@Model.Description</dd>
+
+    <dt class="col-sm-3">Price:</dt>
+    <dd class="col-sm-9">@Model.Price.ToString("C")</dd>
+
+    <dt class="col-sm-3">Category:</dt>
+    <dd class="col-sm-9">@Model.Category</dd>
+
+    <dt class="col-sm-3">Available:</dt>
+    <dd class="col-sm-9">
+        @if (Model.IsAvailable)
+        {
+            <span class="badge bg-success">Yes</span>
+        }
+        else
+        {
+            <span class="badge bg-secondary">No</span>
+        }
+    </dd>
+</dl>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="FoodId" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-action="Details" asp-route-id="@Model.FoodId" class="btn btn-info">View Details</a>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

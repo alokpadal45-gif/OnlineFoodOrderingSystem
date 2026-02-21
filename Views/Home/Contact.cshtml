@@ -1,0 +1,98 @@
+@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<h1><i class="fas fa-envelope"></i> @ViewData["Title"]</h1>
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+                <h5><i class="fas fa-info-circle"></i> Contact Information</h5>
+            </div>
+            <div class="card-body">
+                <p><i class="fas fa-map-marker-alt text-danger"></i> <strong>Address:</strong></p>
+                <p class="ms-4">123 Food Street<br>Culinary City, FC 12345</p>
+
+                <p><i class="fas fa-phone text-success"></i> <strong>Phone:</strong></p>
+                <p class="ms-4"><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+
+                <p><i class="fas fa-envelope text-primary"></i> <strong>Email:</strong></p>
+                <p class="ms-4"><a href="mailto:info@foodordering.com">info@foodordering.com</a></p>
+
+                <p><i class="fas fa-clock text-warning"></i> <strong>Business Hours:</strong></p>
+                <p class="ms-4">
+                    Monday - Friday: 9:00 AM - 10:00 PM<br>
+                    Saturday - Sunday: 10:00 AM - 11:00 PM
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header bg-info text-white">
+                <h5><i class="fas fa-share-alt"></i> Follow Us</h5>
+            </div>
+            <div class="card-body">
+                <a href="#" class="btn btn-primary me-2"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#" class="btn btn-info me-2"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#" class="btn btn-danger me-2"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header bg-success text-white">
+                <h5><i class="fas fa-paper-plane"></i> Send Us a Message</h5>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="your@email.com" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="(123) 456-7890">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" placeholder="What is this about?" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-success">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="alert alert-info mt-4">
+    <h5><i class="fas fa-question-circle"></i> Frequently Asked Questions</h5>
+    <p><strong>Q: What are your delivery areas?</strong><br>
+    A: We currently deliver within a 10-mile radius of our location.</p>
+    
+    <p><strong>Q: How long does delivery take?</strong><br>
+    A: Typical delivery time is 30-45 minutes depending on your location.</p>
+    
+    <p><strong>Q: Do you offer refunds?</strong><br>
+    A: Yes, we offer full refunds for orders that don't meet our quality standards.</p>
+    
+    <p class="mb-0"><strong>Q: Can I customize my order?</strong><br>
+    A: Absolutely! Contact us for special requests and dietary requirements.</p>
+</div>

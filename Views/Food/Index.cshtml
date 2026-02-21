@@ -1,0 +1,48 @@
+@model IEnumerable<OnlineFoodOrderingSystem.Models.Food>
+
+@{
+    ViewData["Title"] = "Food Menu";
+}
+
+<h2>Food Menu <a asp-action="Create" class="btn btn-primary">Add New Item</a></h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Available</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.FoodId</td>
+                <td>@item.FoodName</td>
+                <td>@item.Description</td>
+                <td>@item.Price.ToString("C")</td>
+                <td>@item.Category</td>
+                <td>
+                    @if (item.IsAvailable)
+                    {
+                        <span class="badge bg-success">Yes</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-secondary">No</span>
+                    }
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.FoodId" class="btn btn-sm btn-info">Details</a>
+                    <a asp-action="Edit" asp-route-id="@item.FoodId" class="btn btn-sm btn-warning">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@item.FoodId" class="btn btn-sm btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

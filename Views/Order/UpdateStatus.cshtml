@@ -1,0 +1,81 @@
+@model OnlineFoodOrderingSystem.Models.Order
+
+@{
+    ViewData["Title"] = "Update Order Status";
+}
+
+<h1><i class="fas fa-sync"></i> Update Order Status</h1>
+<hr />
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="card mb-4">
+            <div class="card-header bg-info text-white">
+                <h5>Order #@Model.OrderId Information</h5>
+            </div>
+            <div class="card-body">
+                <dl class="row mb-0">
+                    <dt class="col-sm-4">Customer:</dt>
+                    <dd class="col-sm-8">@Model.Customer?.CustomerName</dd>
+
+                    <dt class="col-sm-4">Order Date:</dt>
+                    <dd class="col-sm-8">@Model.OrderDate.ToString("MMMM dd, yyyy hh:mm tt")</dd>
+
+                    <dt class="col-sm-4">Total Amount:</dt>
+                    <dd class="col-sm-8"><strong>@Model.TotalAmount.ToString("C")</strong></dd>
+
+                    <dt class="col-sm-4">Current Status:</dt>
+                    <dd class="col-sm-8">
+                        <span class="badge bg-@(
+                            Model.OrderStatus == "Delivered" ? "success" :
+                            Model.OrderStatus == "Cancelled" ? "danger" :
+                            Model.OrderStatus == "Out for Delivery" ? "info" :
+                            Model.OrderStatus == "Preparing" ? "warning" :
+                            Model.OrderStatus == "Confirmed" ? "primary" : "secondary"
+                        )">
+                            @Model.OrderStatus
+                        </span>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+        <form asp-action="UpdateStatus" asp-route-id="@Model.OrderId" method="post">
+            <div class="mb-3">
+                <label for="orderStatus" class="form-label"><strong>Select New Status:</strong></label>
+                <select name="orderStatus" id="orderStatus" class="form-select" required>
+                    @foreach (var status in ViewBag.OrderStatuses as SelectList)
+                    {
+                        <option value="@status.Value" selected="@(status.Value == Model.OrderStatus)">
+                            @status.Text
+                        </option>
+                    }
+                </select>
+            </div>
+
+            <div class="alert alert-info">
+                <h6><i class="fas fa-info-circle"></i> Status Workflow:</h6>
+                <ul class="mb-0">
+                    <li><strong>Pending:</strong> Order received, awaiting confirmation</li>
+                    <li><strong>Confirmed:</strong> Order confirmed and accepted</li>
+                    <li><strong>Preparing:</strong> Food is being prepared</li>
+                    <li><strong>Out for Delivery:</strong> Order is on the way</li>
+                    <li><strong>Delivered:</strong> Order successfully delivered</li>
+                    <li><strong>Cancelled:</strong> Order was cancelled</li>
+                </ul>
+            </div>
+
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-check"></i> Update Status
+                </button>
+                <a asp-action="Details" asp-route-id="@Model.OrderId" class="btn btn-info">
+                    <i class="fas fa-eye"></i> View Order Details
+                </a>
+                <a asp-action="Index" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Back to List
+                </a>
+            </div>
+        </form>
+    </div>
+</div>

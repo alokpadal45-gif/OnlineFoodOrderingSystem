@@ -1,0 +1,48 @@
+@model OnlineFoodOrderingSystem.Models.OrderDetail
+
+@{
+    ViewData["Title"] = "Remove Item from Order";
+}
+
+<h1><i class="fas fa-trash"></i> Remove Item from Order</h1>
+<hr />
+
+<div class="alert alert-warning">
+    <i class="fas fa-exclamation-triangle"></i> Are you sure you want to remove this item from the order?
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-body">
+                <dl class="row">
+                    <dt class="col-sm-3">Order ID</dt>
+                    <dd class="col-sm-9">@Model.OrderId</dd>
+
+                    <dt class="col-sm-3">Food Item</dt>
+                    <dd class="col-sm-9">@Model.Food?.FoodName</dd>
+
+                    <dt class="col-sm-3">Quantity</dt>
+                    <dd class="col-sm-9">@Model.Quantity</dd>
+
+                    <dt class="col-sm-3">Unit Price</dt>
+                    <dd class="col-sm-9">@Model.UnitPrice.ToString("C")</dd>
+
+                    <dt class="col-sm-3">Subtotal</dt>
+                    <dd class="col-sm-9">@Model.Subtotal.ToString("C")</dd>
+                </dl>
+
+                <form asp-action="RemoveItem" method="post">
+                    <input type="hidden" asp-for="OrderDetailId" />
+                    
+                    <a asp-action="Create" asp-route-orderId="@Model.OrderId" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i> Cancel
+                    </a>
+                    <button type="submit" class="btn btn-danger">
+                        <i class="fas fa-trash"></i> Remove Item
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

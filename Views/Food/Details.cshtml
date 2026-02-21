@@ -1,0 +1,43 @@
+@model OnlineFoodOrderingSystem.Models.Food
+
+@{
+    ViewData["Title"] = "Food Details";
+}
+
+<h2>Food Item Details</h2>
+<hr />
+
+<dl class="row">
+    <dt class="col-sm-3">Food ID:</dt>
+    <dd class="col-sm-9">@Model.FoodId</dd>
+
+    <dt class="col-sm-3">Name:</dt>
+    <dd class="col-sm-9">@Model.FoodName</dd>
+
+    <dt class="col-sm-3">Description:</dt>
+    <dd class="col-sm-9">@Model.Description</dd>
+
+    <dt class="col-sm-3">Price:</dt>
+    <dd class="col-sm-9">@Model.Price.ToString("C")</dd>
+
+    <dt class="col-sm-3">Category:</dt>
+    <dd class="col-sm-9">@Model.Category</dd>
+
+    <dt class="col-sm-3">Available:</dt>
+    <dd class="col-sm-9">
+        @if (Model.IsAvailable)
+        {
+            <span class="badge bg-success">Yes</span>
+        }
+        else
+        {
+            <span class="badge bg-secondary">No</span>
+        }
+    </dd>
+</dl>
+
+<div class="mt-3">
+    <a asp-action="Edit" asp-route-id="@Model.FoodId" class="btn btn-warning">Edit</a>
+    <a asp-action="Delete" asp-route-id="@Model.FoodId" class="btn btn-danger">Delete</a>
+    <a asp-action="Index" class="btn btn-secondary">Back to Menu</a>
+</div>

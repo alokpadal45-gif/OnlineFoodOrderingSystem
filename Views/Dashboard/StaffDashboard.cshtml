@@ -1,0 +1,92 @@
+@model OnlineFoodOrderingSystem.ViewModels.DashboardViewModel
+
+@{
+    ViewData["Title"] = "Staff Dashboard";
+}
+
+<!-- Staff Dashboard - focused on order processing -->
+<div class="row mb-4">
+    <div class="col-12">
+        <h2><i class="fas fa-tasks"></i> Staff Dashboard</h2>
+        <p class="text-muted">Order processing and management</p>
+    </div>
+</div>
+
+<!-- Pending Orders Alert - prominently displayed for staff -->
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="card bg-warning text-white shadow-lg">
+            <div class="card-body text-center">
+                <i class="fas fa-exclamation-triangle fa-3x mb-3"></i>
+                <h2>@Model.PendingOrders</h2>
+                <h5>Orders Awaiting Processing</h5>
+                <a asp-controller="Order" asp-action="Index" class="btn btn-light mt-3">
+                    <i class="fas fa-eye"></i> View All Orders
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Active Orders List for Staff -->
+<div class="row">
+    <div class="col-12">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="fas fa-clipboard-list"></i> Active Orders</h5>
+            </div>
+            <div class="card-body">
+                @if (Model.RecentOrders.Any())
+                {
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Customer</th>
+                                    <th>Order Time</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var order in Model.RecentOrders)
+                                {
+                                    <!-- Highlight pending orders with yellow background -->
+                                    <tr class="@(order.Status == "Pending" ? "table-warning" : "")">
+                                        <td><strong>#@order.OrderId</strong></td>
+                                        <td>
+                                            @order.User.FirstName @order.User.LastName
+                                            <br />
+                                            <small class="text-muted">@order.User.PhoneNumber</small>
+                                        </td>
+                                        <td>@order.OrderDate.ToString("MMM dd, yyyy hh:mm tt")</td>
+                                        <td><strong>$@order.TotalAmount.ToString("N2")</strong></td>
+                                        <td>
+                                            <span class="badge bg-@(order.Status == "Pending" ? "warning" : "info")">
+                                                @order.Status
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a asp-controller="Order" asp-action="Details" asp-route-id="@order.OrderId" 
+                                               class="btn btn-sm btn-primary">
+                                                <i class="fas fa-eye"></i> Process
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                }
+                else
+                {
+                    <div class="alert alert-info text-center">
+                        <i class="fas fa-info-circle"></i> No active orders at the moment.
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

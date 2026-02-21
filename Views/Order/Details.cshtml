@@ -1,0 +1,156 @@
+@model OnlineFoodOrderingSystem.Models.Order
+
+@{
+    ViewData["Title"] = "Order Details";
+}
+
+<div class="row mb-3">
+    <div class="col-md-6">
+        <h1><i class="fas fa-file-invoice"></i> Order #@Model.OrderId</h1>
+    </div>
+    <div class="col-md-6 text-end">
+        <a asp-action="AddItem" asp-route-id="@Model.OrderId" class="btn btn-success">
+            <i class="fas fa-plus"></i> Add Food Item
+        </a>
+    </div>
+</div>
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card mb-3">
+            <div class="card-header bg-primary text-white">
+                <h5><i class="fas fa-user"></i> Customer Information</h5>
+            </div>
+            <div class="card-body">
+                <dl class="row mb-0">
+                    <dt class="col-sm-5">Customer Name:</dt>
+                    <dd class="col-sm-7">
+                        <a asp-controller="Customer" asp-action="Details" asp-route-id="@Model.CustomerId">
+                            @Model.Customer?.CustomerName
+                        </a>
+                    </dd>
+
+                    <dt class="col-sm-5">Email:</dt>
+                    <dd class="col-sm-7">
+                        <a href="mailto:@Model.Customer?.Email">@Model.Customer?.Email</a>
+                    </dd>
+
+                    <dt class="col-sm-5">Phone:</dt>
+                    <dd class="col-sm-7">
+                        <a href="tel:@Model.Customer?.PhoneNumber">@Model.Customer?.PhoneNumber</a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card mb-3">
+            <div class="card-header bg-info text-white">
+                <h5><i class="fas fa-info-circle"></i> Order Information</h5>
+            </div>
+            <div class="card-body">
+                <dl class="row mb-0">
+                    <dt class="col-sm-5">Order ID:</dt>
+                    <dd class="col-sm-7"><strong>#@Model.OrderId</strong></dd>
+
+                    <dt class="col-sm-5">Order Date:</dt>
+                    <dd class="col-sm-7">@Model.OrderDate.ToString("MMMM dd, yyyy hh:mm tt")</dd>
+
+                    <dt class="col-sm-5">Status:</dt>
+                    <dd class="col-sm-7">
+                        <span class="badge bg-@(
+                            Model.OrderStatus == "Delivered" ? "success" :
+                            Model.OrderStatus == "Cancelled" ? "danger" :
+                            Model.OrderStatus == "Out for Delivery" ? "info" :
+                            Model.OrderStatus == "Preparing" ? "warning" :
+                            Model.OrderStatus == "Confirmed" ? "primary" : "secondary"
+                        )">
+                            @Model.OrderStatus
+                        </span>
+                        <a asp-action="UpdateStatus" asp-route-id="@Model.OrderId" class="btn btn-sm btn-outline-primary ms-2">
+                            <i class="fas fa-sync"></i> Update
+                        </a>
+                    </dd>
+
+                    <dt class="col-sm-5">Delivery Address:</dt>
+                    <dd class="col-sm-7">@(Model.DeliveryAddress ?? Model.Customer?.Address ?? "N/A")</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header bg-success text-white">
+        <h5><i class="fas fa-hamburger"></i> Order Items</h5>
+    </div>
+    <div class="card-body">
+        @if (Model.OrderDetails != null && Model.OrderDetails.Any())
+        {
+            <div class="table-responsive">
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Food Item</th>
+                            <th>Unit Price</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            int itemNumber = 1;
+                        }
+                        @foreach (var item in Model.OrderDetails)
+                        {
+                            <tr>
+                                <td>@itemNumber</td>
+                                <td>@item.Food?.FoodName</td>
+                                <td>@item.UnitPrice.ToString("C")</td>
+                                <td>@item.Quantity</td>
+                                <td><strong>@item.Subtotal.ToString("C")</strong></td>
+                                <td>
+                                    <a asp-action="RemoveItem" asp-route-id="@item.OrderDetailId" class="btn btn-sm btn-danger" title="Remove Item">
+                                        <i class="fas fa-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            itemNumber++;
+                        }
+                    </tbody>
+                    <tfoot>
+                        <tr class="table-active">
+                            <td colspan="4" class="text-end"><strong>Total Amount:</strong></td>
+                            <td colspan="2"><h5 class="text-success mb-0">@Model.TotalAmount.ToString("C")</h5></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-warning mb-0">
+                <i class="fas fa-exclamation-triangle"></i> No items in this order yet. 
+                <a asp-action="AddItem" asp-route-id="@Model.OrderId" class="btn btn-sm btn-success ms-2">
+                    <i class="fas fa-plus"></i> Add First Item
+                </a>
+            </div>
+        }
+    </div>
+</div>
+
+<div class="mt-3">
+    <a asp-action="Edit" asp-route-id="@Model.OrderId" class="btn btn-warning">
+        <i class="fas fa-edit"></i> Edit Order
+    </a>
+    <a asp-action="Delete" asp-route-id="@Model.OrderId" class="btn btn-danger">
+        <i class="fas fa-trash"></i> Delete Order
+    </a>
+    <a asp-action="Index" class="btn btn-secondary">
+        <i class="fas fa-arrow-left"></i> Back to List
+    </a>
+</div>

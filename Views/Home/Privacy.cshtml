@@ -1,0 +1,48 @@
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<h1><i class="fas fa-shield-alt"></i> @ViewData["Title"]</h1>
+<hr />
+
+<div class="card mb-3">
+    <div class="card-body">
+        <h4>Your Privacy Matters</h4>
+        <p>At Online Food Ordering System, we are committed to protecting your privacy and ensuring the security of your personal information.</p>
+    </div>
+</div>
+
+<h3>Information We Collect</h3>
+<p>We collect the following information when you use our service:</p>
+<ul>
+    <li>Name and contact information (email, phone number)</li>
+    <li>Delivery address</li>
+    <li>Order history and preferences</li>
+    <li>Payment information (processed securely)</li>
+</ul>
+
+<h3>How We Use Your Information</h3>
+<p>Your information is used to:</p>
+<ul>
+    <li>Process and deliver your orders</li>
+    <li>Communicate with you about your orders</li>
+    <li>Improve our services and menu offerings</li>
+    <li>Send promotional offers (with your consent)</li>
+</ul>
+
+<h3>Data Security</h3>
+<p>We implement industry-standard security measures to protect your personal information from unauthorized access, disclosure, or misuse.</p>
+
+<h3>Your Rights</h3>
+<p>You have the right to:</p>
+<ul>
+    <li>Access your personal information</li>
+    <li>Request corrections to your data</li>
+    <li>Delete your account and associated data</li>
+    <li>Opt-out of marketing communications</li>
+</ul>
+
+<h3>Contact Us</h3>
+<p>If you have any questions about our privacy policy, please <a asp-action="Contact">contact us</a>.</p>
+
+<p class="text-muted mt-4"><small>Last updated: @DateTime.Now.ToString("MMMM yyyy")</small></p>
