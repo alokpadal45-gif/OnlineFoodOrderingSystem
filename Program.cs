@@ -55,9 +55,13 @@ builder.Services.ConfigureApplicationCookie(options =>
 // This enables the MVC pattern in the application
 builder.Services.AddControllersWithViews();
 
+// Reduce noise from EF Core during startup by only logging warnings and above
+builder.Logging.AddFilter("Microsoft.EntityFrameworkCore.Database.Command",
+    Microsoft.Extensions.Logging.LogLevel.Warning);
+
 var app = builder.Build();
 
-// Seed database with initial data
+// Seed database with initial data on first launch only
 // This creates default roles, admin user, and menu items
 using (var scope = app.Services.CreateScope())
 {
@@ -69,8 +73,12 @@ using (var scope = app.Services.CreateScope())
         var userManager = services.GetRequiredService<UserManager<User>>();
         var roleManager = services.GetRequiredService<RoleManager<Role>>();
 
-        // Run database seeder
-        await DbSeeder.SeedDatabase(context, userManager, roleManager);
+        // Only run seeding if important tables are empty; the methods themselves
+        // already guard against duplicates, but checking early avoids some EF work.
+        if (!context.Menus.Any() || !context.Users.Any() || !context.Roles.Any())
+        {
+            await DbSeeder.SeedDatabase(context, userManager, roleManager);
+        }
     }
     catch (Exception ex)
     {

@@ -5,7 +5,8 @@
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
-      "applicationUrl": "http://0.0.0.0:5103",
+      // use loopback IP with port 0 to let the runtime pick an available port
+      "applicationUrl": "http://127.0.0.1:0",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -14,7 +15,8 @@
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
-      "applicationUrl": "https://0.0.0.0:7053;http://0.0.0.0:5103",
+      // prefer dynamic ports for both https and http to avoid conflicts
+      "applicationUrl": "https://127.0.0.1:0;http://127.0.0.1:0",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

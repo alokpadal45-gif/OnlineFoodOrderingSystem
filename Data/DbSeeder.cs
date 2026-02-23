@@ -17,9 +17,6 @@ namespace OnlineFoodOrderingSystem.Data
             UserManager<User> userManager, 
             RoleManager<Role> roleManager)
         {
-            // Ensure database is created
-            context.Database.EnsureCreated();
-
             // Seed Roles - create the 4 default roles
             await SeedRoles(roleManager);
 
