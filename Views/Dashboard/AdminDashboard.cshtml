@@ -87,7 +87,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <div>
                         <h6 class="card-title">Total Revenue</h6>
-                        <h2 class="mb-0">$@Model.TotalRevenue.ToString("N2")</h2>
+                        <h2 class="mb-0">NPR @Model.TotalRevenue.ToString("N2")</h2>
                     </div>
                     <div>
                         <i class="fas fa-dollar-sign fa-3x opacity-50"></i>
@@ -165,7 +165,7 @@
                                         <td>#@order.OrderId</td>
                                         <td>@order.User.FirstName @order.User.LastName</td>
                                         <td>@order.OrderDate.ToString("MMM dd, yyyy hh:mm tt")</td>
-                                        <td>$@order.TotalAmount.ToString("N2")</td>
+                                        <td>NPR @order.TotalAmount.ToString("N2")</td>
                                         <td>
                                             <!-- Display status with color-coded badge -->
                                             <span class="badge 
