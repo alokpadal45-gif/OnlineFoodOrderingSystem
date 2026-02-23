@@ -99,7 +99,7 @@
                                         <td><strong>#@order.OrderId</strong></td>
                                         <td>@order.OrderDate.ToString("MMM dd, yyyy")</td>
                                         <td>@order.OrderDetails.Count() items</td>
-                                        <td><strong>$@order.TotalAmount.ToString("N2")</strong></td>
+                                        <td><strong>NPR @order.TotalAmount.ToString("N2")</strong></td>
                                         <td>
                                             <span class="badge 
                                                 @(order.Status == "Delivered" ? "bg-success" : 

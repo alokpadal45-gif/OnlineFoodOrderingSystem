@@ -5,6 +5,22 @@
 <h1><i class="fas fa-envelope"></i> @ViewData["Title"]</h1>
 <hr />
 
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <i class="fas fa-check-circle"></i> @TempData["Success"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+}
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <i class="fas fa-exclamation-circle"></i> @TempData["Error"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+}
+
 <div class="row">
     <div class="col-md-6">
         <div class="card mb-4">
@@ -47,30 +63,37 @@
                 <h5><i class="fas fa-paper-plane"></i> Send Us a Message</h5>
             </div>
             <div class="card-body">
-                <form>
+                <form asp-action="Contact" asp-controller="Home" method="post">
+                    @Html.AntiForgeryToken()
+
                     <div class="mb-3">
                         <label for="name" class="form-label">Your Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        <input type="text" class="form-control" id="name" name="name" 
+                               placeholder="Enter your name" required>
                     </div>
 
                     <div class="mb-3">
                         <label for="email" class="form-label">Email Address</label>
-                        <input type="email" class="form-control" id="email" placeholder="your@email.com" required>
+                        <input type="email" class="form-control" id="email" name="email" 
+                               placeholder="your@email.com" required>
                     </div>
 
                     <div class="mb-3">
                         <label for="phone" class="form-label">Phone Number</label>
-                        <input type="tel" class="form-control" id="phone" placeholder="+977- 9744258908" required>
+                        <input type="tel" class="form-control" id="phone" name="phone" 
+                               placeholder="+977- 9744258908">
                     </div>
 
                     <div class="mb-3">
                         <label for="subject" class="form-label">Subject</label>
-                        <input type="text" class="form-control" id="subject" placeholder="What is this about?" required>
+                        <input type="text" class="form-control" id="subject" name="subject" 
+                               placeholder="What is this about?">
                     </div>
 
                     <div class="mb-3">
                         <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..." required></textarea>
+                        <textarea class="form-control" id="message" name="message" rows="5" 
+                                  placeholder="Write your message here..." required></textarea>
                     </div>
 
                     <button type="submit" class="btn btn-success">
@@ -86,13 +109,13 @@
     <h5><i class="fas fa-question-circle"></i> Frequently Asked Questions</h5>
     <p><strong>Q: What are your delivery areas?</strong><br>
     A: We currently deliver within a 10-mile radius of our location.</p>
-    
+
     <p><strong>Q: How long does delivery take?</strong><br>
     A: Typical delivery time is 30-45 minutes depending on your location.</p>
-    
+
     <p><strong>Q: Do you offer refunds?</strong><br>
     A: Yes, we offer full refunds for orders that don't meet our quality standards.</p>
-    
+
     <p class="mb-0"><strong>Q: Can I customize my order?</strong><br>
     A: Absolutely! Contact us for special requests and dietary requirements.</p>
 </div>

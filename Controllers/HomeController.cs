@@ -35,9 +35,29 @@ namespace OnlineFoodOrderingSystem.Controllers
             return View();
         }
 
+        // GET
+        [HttpGet]
         public IActionResult Contact()
         {
             return View();
+        }
+
+        // POST - handles form submission
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Contact(string name, string email, string phone, string subject, string message)
+        {
+            if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(email) || 
+                string.IsNullOrWhiteSpace(message))
+            {
+                TempData["Error"] = "Please fill in all required fields.";
+                return View();
+            }
+
+            // Optional: save to DB later
+            // For now just show success
+            TempData["Success"] = $"Thank you, {name}! Your message has been received. We'll get back to you soon.";
+            return RedirectToAction("Contact");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -110,7 +110,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" asp-controller="Account" asp-action="Profile">
+                                        <a class="dropdown-item" asp-controller="Profile" asp-action="Index">
                                             <i class="fas fa-user"></i> My Profile
                                         </a>
                                     </li>
@@ -164,7 +164,7 @@
             </div>
         }
 
-        <!-- Page Content - this is where individual page views are rendered -->
+        <!-- Page Content -->
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
@@ -185,7 +185,7 @@
         </div>
     </footer>
 
-    <!-- Bootstrap Bundle JS (includes Popper) -->
+    <!-- Bootstrap Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     
     <!-- jQuery -->

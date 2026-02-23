@@ -62,7 +62,7 @@
                                             <small class="text-muted">@order.User.PhoneNumber</small>
                                         </td>
                                         <td>@order.OrderDate.ToString("MMM dd, yyyy hh:mm tt")</td>
-                                        <td><strong>$@order.TotalAmount.ToString("N2")</strong></td>
+                                        <td><strong>NPR@order.TotalAmount.ToString("N2")</strong></td>
                                         <td>
                                             <span class="badge bg-@(order.Status == "Pending" ? "warning" : "info")">
                                                 @order.Status
