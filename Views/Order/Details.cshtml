@@ -110,9 +110,9 @@
                             <tr>
                                 <td>@itemNumber</td>
                                 <td>@item.Food?.FoodName</td>
-                                <td>@item.UnitPrice.ToString("C")</td>
+                                <td>NPR @item.UnitPrice.ToString("N2")</td>
                                 <td>@item.Quantity</td>
-                                <td><strong>@item.Subtotal.ToString("C")</strong></td>
+                                <td><strong>NPR @item.Subtotal.ToString("N2")</strong></td>
                                 <td>
                                     <a asp-action="RemoveItem" asp-route-id="@item.OrderDetailId" class="btn btn-sm btn-danger" title="Remove Item">
                                         <i class="fas fa-trash"></i>
@@ -125,7 +125,7 @@
                     <tfoot>
                         <tr class="table-active">
                             <td colspan="4" class="text-end"><strong>Total Amount:</strong></td>
-                            <td colspan="2"><h5 class="text-success mb-0">@Model.TotalAmount.ToString("C")</h5></td>
+                            <td colspan="2"><h5 class="text-success mb-0">NPR @Model.TotalAmount.ToString("N2")</h5></td>
                         </tr>
                     </tfoot>
                 </table>
