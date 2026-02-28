@@ -55,6 +55,9 @@ builder.Services.ConfigureApplicationCookie(options =>
 // This enables the MVC pattern in the application
 builder.Services.AddControllersWithViews();
 
+// register application services
+builder.Services.AddScoped<OnlineFoodOrderingSystem.Services.IFoodService, OnlineFoodOrderingSystem.Services.FoodService>();
+
 // Reduce noise from EF Core during startup by only logging warnings and above
 builder.Logging.AddFilter("Microsoft.EntityFrameworkCore.Database.Command",
     Microsoft.Extensions.Logging.LogLevel.Warning);
@@ -101,6 +104,9 @@ app.UseHttpsRedirection();    // Redirect HTTP requests to HTTPS
 app.UseStaticFiles();         // Enable serving static files (CSS, JS, images)
 
 app.UseRouting();             // Enable routing
+
+// Add custom middleware that logs unhandled exceptions before they are handled by the framework
+app.UseMiddleware<OnlineFoodOrderingSystem.Middleware.ExceptionLoggingMiddleware>();
 
 // Enable authentication and authorization middleware
 // IMPORTANT: Authentication must come before Authorization

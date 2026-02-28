@@ -1,10 +1,17 @@
-@model IEnumerable<OnlineFoodOrderingSystem.Models.Food>
+@model OnlineFoodOrderingSystem.ViewModels.FoodIndexViewModel
 
 @{
     ViewData["Title"] = "Food Menu";
 }
 
 <h2>Food Menu <a asp-action="Create" class="btn btn-primary">Add New Item</a></h2>
+
+<form asp-action="Index" method="get" class="mb-3">
+    <div class="input-group">
+        <input type="text" name="searchString" value="@Model.SearchString" class="form-control" placeholder="Search by name or category" />
+        <button type="submit" class="btn btn-outline-secondary">Search</button>
+    </div>
+</form>
 
 <table class="table table-striped">
     <thead>
@@ -19,7 +26,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
+        @foreach (var item in Model.Foods)
         {
             <tr>
                 <td>@item.FoodId</td>
@@ -46,3 +53,23 @@
         }
     </tbody>
 </table>
+
+@if (Model.Foods.TotalPages > 1)
+{
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+            <li class="page-item @(Model.Foods.HasPreviousPage ? "" : "disabled")">
+                <a class="page-link" asp-action="Index" asp-route-page="@(Model.PageIndex - 1)" asp-route-searchString="@Model.SearchString">Previous</a>
+            </li>
+            @for (int i = 1; i <= Model.Foods.TotalPages; i++)
+            {
+                <li class="page-item @(i == Model.PageIndex ? "active" : "")">
+                    <a class="page-link" asp-action="Index" asp-route-page="@i" asp-route-searchString="@Model.SearchString">@i</a>
+                </li>
+            }
+            <li class="page-item @(Model.Foods.HasNextPage ? "" : "disabled")">
+                <a class="page-link" asp-action="Index" asp-route-page="@(Model.PageIndex + 1)" asp-route-searchString="@Model.SearchString">Next</a>
+            </li>
+        </ul>
+    </nav>
+}
